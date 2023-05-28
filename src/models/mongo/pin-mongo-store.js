@@ -245,7 +245,7 @@ export const pinMongoStore = {
 
     async removeImage(pinId, url) {
       console.log('removing image')
-      const removeUrl = {$pull: {img: url} };
+      const removeUrl = {$pull: {img: { $in: [url]} } };
       const pin = await Pin.updateOne(
         { _id: pinId }, removeUrl,
         (error, result) => {
@@ -258,5 +258,5 @@ export const pinMongoStore = {
         }
       );
     },
-    
+
   };  
