@@ -10,7 +10,7 @@ const pinSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "User",
   },
-  img: String,
+  img: [String],
 });
 
 export const Pin = Mongoose.model("Pin", pinSchema);

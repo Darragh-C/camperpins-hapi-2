@@ -29,7 +29,7 @@ export const PinSpec = Joi.object()
     lattitude: Joi.string().example("56.23").optional(),
     longitude: Joi.string().example("23.44").optional(),
     userid: IdSpec,
-    img: Joi.string().example("your-image-url").optional(),
+    img: Joi.array().items(Joi.string()).example(["your-image-url"]).optional(),
   })
   .label("Pin");
 

@@ -65,7 +65,12 @@ export const pinController = {
           const url = await imageStore.uploadImage(request.payload.imagefile);
           console.log('url:');
           console.log(url);
-          pin.img = url;
+          if (pin.img) {
+            pin.img.push(url);
+          } else {
+            pin.img = [url];
+          }
+          
           await db.pinStore.updateImage(pin);
         }
         return h.redirect(`/pin/${pin._id}`);
