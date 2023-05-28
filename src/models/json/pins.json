@@ -1,0 +1,41 @@
+{
+  "pins": [
+    {
+      "name": "Kinsale",
+      "description": "Cork seaside town",
+      "lattitude": "44.45",
+      "longitude": "55.45",
+      "_id": "d9c2e405-e565-4a08-9bc1-8445827ec37e"
+    },
+    {
+      "name": "Cobh",
+      "description": "Cork seaside town",
+      "lattitude": "44.45",
+      "longitude": "55.45",
+      "_id": "ea9723bc-192f-4475-870a-5444b1c6394d"
+    },
+    {
+      "name": "Castletownbere",
+      "description": "Cork seaside town",
+      "lattitude": "44.45",
+      "longitude": "55.45",
+      "_id": "48c10f3f-b814-429a-a1c2-a52dfbc66c82"
+    },
+    {
+      "userid": "fea756c2-ad2b-43f1-8400-dcebf8ca180a",
+      "name": "Springfield",
+      "_id": "256708fb-cebf-4a3f-b260-bb0629a73116",
+      "description": "Rival town",
+      "lattitude": "45.99",
+      "longitude": "56.77"
+    },
+    {
+      "userid": "fea756c2-ad2b-43f1-8400-dcebf8ca180a",
+      "name": "Cobh",
+      "_id": "aa130cf3-e548-4a03-ab8f-9512b9f2cdaa",
+      "description": "Seaside town",
+      "lattitude": "45.99",
+      "longitude": "56.77"
+    }
+  ]
+}
