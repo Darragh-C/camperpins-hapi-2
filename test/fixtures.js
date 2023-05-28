@@ -40,6 +40,14 @@ export const testPin = {
     longitude: "55.45",
 };
 
+export const testImgPin = {
+  name: "Kinsale",
+  description: "Cork seaside town",
+  lattitude: "44.45",
+  longitude: "55.45",
+  img: ["url1", "url2", "url3"]
+};
+
 export const multiTestPins = [
     {
         name: "Kinsale",
@@ -82,4 +90,4 @@ export const pinUpdates = {
 }
 
 
-export const serviceUrl = "http://localhost:9122";
+export const serviceUrl = "http://localhost:4444";

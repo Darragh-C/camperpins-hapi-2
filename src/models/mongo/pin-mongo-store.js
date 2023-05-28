@@ -244,19 +244,19 @@ export const pinMongoStore = {
     },
 
     async removeImage(pinId, url) {
-      console.log('removing image')
-      const removeUrl = {$pull: {img: { $in: [url]} } };
-      const pin = await Pin.updateOne(
-        { _id: pinId }, removeUrl,
-        (error, result) => {
-          if (error) {
-            console.error(error);
-          } else {
-            console.log('URL removed successfully');
-            return true;
-          }
-        }
-      );
+      console.log(`removing image ${url}`);
+      
+      try {
+        const result = await Pin.updateOne(
+          { _id: pinId }, 
+          { $pull: { img: url } }
+        );
+          
+        return true;
+        console.log(result);
+      } catch (err) {
+        console.log(err);
+      }
     },
 
   };  

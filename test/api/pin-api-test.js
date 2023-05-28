@@ -1,7 +1,7 @@
 import { assert } from "chai";
 import { poiService } from "./poi-service.js";
 import { assertSubset } from "../test-utils.js";
-import { johnDoe, johnDoeCredentials, testPin, multiTestPins, pinUpdates } from "../fixtures.js";
+import { johnDoe, johnDoeCredentials, testImgPin, testPin, multiTestPins, pinUpdates } from "../fixtures.js";
 import { EventEmitter } from "events";
 
 EventEmitter.setMaxListeners(25);
@@ -123,5 +123,21 @@ suite("Pin API tests", () => {
     console.log(test);
     
   });
+
+  test('remove image url', async () => {
+    const dbPin = await poiService.createPin(testImgPin);
+    console.log(dbPin);
+    assertSubset(dbPin, testImgPin);
+    const beforeUrl = dbPin.img;
+    const url = 'url2'
+    console.log("starting to remove image")
+    const response = await poiService.removeImage(dbPin._id, url);
+    console.log(`remove pin response: ${response}`);
+    const returnedPin = await poiService.getPin(dbPin._id);
+    console.log(`api image pin test: ${returnedPin.img}`);
+    const afterUrl = returnedPin.img;
+    assert.isNotNull(beforeUrl, afterUrl);
+    assert.equal(afterUrl.length, beforeUrl.length - 1);
+})
 
 });

@@ -75,6 +75,11 @@ export const poiService = {
     return res.data;
   },
 
+  async removeImage(id, url) {
+    const response = await axios.post(`${this.poiUrl}/api/pins/${id}/removeimage`, { imgurl : url });
+    return response;
+  },
+
   //Category API
   async createCategory(id, category) {
     const res = await axios.post(`${this.poiUrl}/api/pins/${id}/categories`, category);
