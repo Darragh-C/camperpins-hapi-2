@@ -218,7 +218,7 @@ export const pinApi = {
     */
     handler: async function (request, h) {
       try {
-        const pin = await db.pinStore.removeImage(request.params.id);
+        const pin = await db.pinStore.removeImage(request.params.id, request.payload);
         if (!pin) {
           return Boom.notFound("Update error");
         }
