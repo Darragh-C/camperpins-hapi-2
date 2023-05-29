@@ -220,14 +220,8 @@ export const pinApi = {
       try {
         console.log(`trying to remove pin`);
         console.log(request.query);
-
-        // If your request is a POST/PUT/PATCH request with a body
         console.log(request.payload);
-
-        // To log the request headers
         console.log(request.headers);
-
-        // To log route parameters (like /pins/{id})
         console.log(request.params);
         console.log(`request payload: ${request}`);
         const pin = await db.pinStore.removeImage(request.params.id, request.payload.imgurl);
