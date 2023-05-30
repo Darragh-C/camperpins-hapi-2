@@ -1114,7 +1114,7 @@ export const seedData = {
       pinId: "->pins.lake14"
     },
     county48: {
-      category: "Monoghan",
+      category: "Monaghan",
       pinId: "->pins.lake15"
     },
     county49: {
