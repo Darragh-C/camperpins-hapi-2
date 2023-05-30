@@ -1008,6 +1008,206 @@ export const seedData = {
     campervan20aires: {
       category: "Aires",
       pinId: "->pins.aires20"
-    }
+    },
+    county22: {
+      category: "Galway",
+      pinId: "->pins.lake1"
+    },
+    county23: {
+      category: "Tipperary",
+      pinId: "->pins.lake2"
+    },
+    county24: {
+      category: "Clare",
+      pinId: "->pins.lake2"
+    },
+    county25: {
+      category: "Galway",
+      pinId: "->pins.lake2"
+    },
+    county26: {
+      category: "Roscommon",
+      pinId: "->pins.lake3"
+    },
+    county27: {
+      category: "Longford",
+      pinId: "->pins.lake3"
+    },
+    county28: {
+      category: "Antrim",
+      pinId: "->pins.lake4"
+    },
+    county29: {
+      category: "Down",
+      pinId: "->pins.lake4"
+    },
+    county30: {
+      category: "Armagh",
+      pinId: "->pins.lake4"
+    },
+    county31: {
+      category: "Tyrone",
+      pinId: "->pins.lake4"
+    },
+    county32: {
+      category: "Derry",
+      pinId: "->pins.lake4"
+    },
+    county33: {
+      category: "Mayo",
+      pinId: "->pins.lake5"
+    },
+    county34: {
+      category: "Sligo",
+      pinId: "->pins.lake6"
+    },
+    county35: {
+      category: "Leitrim",
+      pinId: "->pins.lake7"
+    },
+    county36: {
+      category: "Roscommon",
+      pinId: "->pins.lake7"
+    },
+    county37: {
+      category: "Cavan",
+      pinId: "->pins.lake8"
+    },
+    county38: {
+      category: "Meath",
+      pinId: "->pins.lake8"
+    },
+    county39: {
+      category: "Westmeath",
+      pinId: "->pins.lake8"
+    },
+    county40: {
+      category: "Fermanagh",
+      pinId: "->pins.lake9"
+    },
+    county41: {
+      category: "Cavan",
+      pinId: "->pins.lake10"
+    },
+    county42: {
+      category: "Cavan",
+      pinId: "->pins.lake11"
+    },
+    county43: {
+      category: "Mayo",
+      pinId: "->pins.lake12"
+    },
+    county44: {
+      category: "Cavan",
+      pinId: "->pins.lake13"
+    },
+    county45: {
+      category: "Longford",
+      pinId: "->pins.lake13"
+    },
+    county46: {
+      category: "Leitrim",
+      pinId: "->pins.lake14"
+    },
+    county47: {
+      category: "Fermanagh",
+      pinId: "->pins.lake14"
+    },
+    county48: {
+      category: "Monoghan",
+      pinId: "->pins.lake15"
+    },
+    county49: {
+      category: "Donegal",
+      pinId: "->pins.lake16"
+    },
+    county50: {
+      category: "Donegal",
+      pinId: "->pins.lake17"
+    },
+    county51: {
+      category: "Sligo",
+      pinId: "->pins.lake18"
+    },
+    county52: {
+      category: "Wicklow",
+      pinId: "->pins.aires1"
+    },
+    county53: {
+      category: "Galway",
+      pinId: "->pins.aires2"
+    },
+    county54: {
+      category: "Kerry",
+      pinId: "->pins.aires3"
+    },
+    county55: {
+      category: "Roscommon",
+      pinId: "->pins.aires4"
+    },
+    county56: {
+      category: "Kerry",
+      pinId: "->pins.aires5"
+    },
+    county57: {
+      category: "Leitrim",
+      pinId: "->pins.aires6"
+    },
+    county58: {
+      category: "Mayo",
+      pinId: "->pins.aires7"
+    },
+    county59: {
+      category: "Donegal",
+      pinId: "->pins.aires8"
+    },
+    county60: {
+      category: "Sligo",
+      pinId: "->pins.aires9"
+    },
+    county61: {
+      category: "Wexford",
+      pinId: "->pins.aires10"
+    },
+    county62: {
+      category: "Wicklow",
+      pinId: "->pins.aires11"
+    },
+    county63: {
+      category: "Kerry",
+      pinId: "->pins.aires12"
+    },
+    county64: {
+      category: "Waterford",
+      pinId: "->pins.aires13"
+    },
+    county65: {
+      category: "Westmeath",
+      pinId: "->pins.aires14"
+    },
+    county66: {
+      category: "Cork",
+      pinId: "->pins.aires15"
+    },
+    county67: {
+      category: "Kerry",
+      pinId: "->pins.aires16"
+    },
+    county68: {
+      category: "Kerry",
+      pinId: "->pins.aires17"
+    },
+    county69: {
+      category: "Clare",
+      pinId: "->pins.aires18"
+    },
+    county70: {
+      category: "Mayo",
+      pinId: "->pins.aires19"
+    },
+    county71: {
+      category: "Westmeath",
+      pinId: "->pins.aires20"
+    },
   }
   }
