@@ -3,6 +3,7 @@ import { db } from "../models/db.js";
 import { UserSpec, UserSpecPlus, IdSpec, UserArray, UserCredentialsSpec, JwtAuth } from "../models/joi-schemas.js";
 import { validationError } from "./logger.js";
 import { createToken } from "./jwt-utils.js";
+import bcrypt from "bcryptjs";
 
 export const userApi = {
 
@@ -88,11 +89,9 @@ export const userApi = {
     handler: async function (request, h) {
       try {
         const user = await db.userStore.getUserByEmail(request.payload.email);
-        if (!user) {
+        const passwordMatch = await bcrypt.compare(request.payload.password, user.password);
+        if (!user || !passwordMatch) {
           return Boom.unauthorized("User not found");
-        }
-        if (user.password !== request.payload.password) {
-          return Boom.unauthorized("Invalid password");
         }
         const token = createToken(user);
         return h.response({ success: true, token: token }).code(201);
